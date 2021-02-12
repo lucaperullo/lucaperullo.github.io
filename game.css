@@ -1,0 +1,72 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(66, 48, 7, 0.24);
+  backdrop-filter: blur(110px);
+  font-size: 20px;
+  min-width: 80rem;
+}
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(66, 48, 7, 0.24);
+  transform: scale(1.02);
+  transform: transform 100ms;
+}
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: white;
+}
+.choice-text {
+  font-size: 30px;
+  padding: 2rem;
+  width: 100%;
+}
+.correct {
+  background-color: rgba(29, 141, 29, 0.205);
+  backdrop-filter: blur(110px);
+}
+.incorrect {
+  background-color: rgba(255, 0, 0, 0.185);
+  backdrop-filter: blur(110px);
+}
+/*Heads up Displays */
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+.hud-prefux {
+  text-align: center;
+  font-size: 30px;
+}
+.hud-main-text {
+  text-align: center;
+}
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid rgba(56, 14, 95, 0.788);
+
+  margin-top: 2rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+#progressText {
+  font-size: 30px;
+}
+#progressBarFull {
+  height: 100%;
+  background-color: rgba(56, 14, 95, 0.788);
+  backdrop-filter: blur(110px);
+  width: 0%;
+}
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}

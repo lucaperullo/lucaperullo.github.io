@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="icon" href="https://art.pixilart.com/ddce20b23382419.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <i
+      style="padding: 60px; position: absolute"
+      onclick="playOrPause()"
+      class="fas fa-music"
+    >
+      <audio>
+        <source src="bgingamemusic.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </i>
+    <video autoplay muted loop id="myVideo">
+      <source src="bgingame.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <div id="game" class="justify-center flex-column">
+        <div id="hud">
+          <div class="hud-item">
+            <p id="progressText" class="hud-prefix">Question</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div class="hud-item">
+            <p class="hud-prefux">Score</p>
+            <h1 class="hud-main-text" id="score">0</h1>
+          </div>
+        </div>
+        <h1 id="question">What is the answer to this question</h1>
+        <div class="choice-container">
+          <p class="choice-prefix">1</p>
+          <p class="choice-text" data-number="1">Choice</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">2</p>
+          <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">3</p>
+          <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">4</p>
+          <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
