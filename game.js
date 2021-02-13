@@ -73,7 +73,7 @@ let questions = [
     choice1: "<p style='font-size:bold'/>",
     choice2: "<p style='text-size:bold/>",
     choice3: "p{text-size:bold}",
-    choice4: "who cares im aint even getting paied for this.",
+    choice4: "who cares im aint even getting paid for this.",
     answer: 4,
   },
 ];
