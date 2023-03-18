@@ -18,7 +18,7 @@
     "push-release": "git push --follow-tags origin main"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.2.4",
+    "@chakra-ui/react": "^2.5.2",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@fontsource/plus-jakarta-sans": "^4.5.8",
