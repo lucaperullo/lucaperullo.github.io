@@ -1,0 +1,43 @@
+{
+  "name": "portfolio2",
+  "version": "0.1.0",
+  "private": true,
+  "author": "lucaperullo",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write src",
+    "up": "yarn upgrade-interactive",
+    "up-latest": "yarn up --latest",
+    "release": "standard-version",
+    "push-release": "git push --follow-tags origin main"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@fontsource/plus-jakarta-sans": "^4.5.8",
+    "@types/swiper": "^6.0.0",
+    "framer-motion": "^6.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "socket.io-client": "^4.5.1",
+    "swiper": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-helmet": "^6.1.5",
+    "@vitejs/plugin-react": "^2.0.0",
+    "prettier": "^2.7.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4"
+  }
+}
