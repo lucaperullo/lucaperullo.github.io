@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "author": "lucaperullo",
+  "homepage": "lucaperullo.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy" : "yarn run build",
+"deploy" : "gh-pages -d build",
     "serve": "vite preview",
     "type-check": "tsc --noEmit",
     "format": "prettier --write src",
